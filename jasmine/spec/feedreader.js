@@ -32,7 +32,7 @@ $(function() {
          * and that the URL is not empty.
          */
          it('have URLs that are not empty', function(){
-            for (i in allFeeds){
+            for (var i in allFeeds){
                 expect(allFeeds[i].url).toBeDefined();
                 expect(allFeeds[i].url).not.toBe('');
                 expect(allFeeds[i].url).not.toBeNull();
@@ -44,7 +44,7 @@ $(function() {
          * and that the name is not empty.
          */
          it('Names are defined and not empty', function(){
-            for(i in allFeeds){
+            for(var i in allFeeds){
                 expect(allFeeds[i].name).toBeDefined();
                 expect(allFeeds[i].name).not.toBe('');
                 expect(allFeeds[i].name).not.toBeNull();
