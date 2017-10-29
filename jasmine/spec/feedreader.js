@@ -104,11 +104,11 @@ $(function() {
     });
     /* Write a new test suite named "New Feed Selection" */
     describe('New Feed Selection', function() {
-        var firstFeed = document.querySelector(".feed").innerHTML;
+
         beforeEach(function(done) {
           loadFeed(1, function() {
-            firstFeed;
-          loadFeed(2, function() {
+            var firstFeed = document.querySelector(".feed").innerHTML;          
+            loadFeed(2, function() {
             done();
         });
       });
